@@ -6,4 +6,4 @@
 
 --15 Feb 2025--
 
-Got CORS issue.
+Got CORS issue. Solved it but got 401 error.
