@@ -1,6 +1,7 @@
 package net.springboot.todo.controller;
 
 import lombok.AllArgsConstructor;
+import net.springboot.todo.dto.JwtAuthResponse;
 import net.springboot.todo.dto.LoginDto;
 import net.springboot.todo.dto.RegisterDto;
 import net.springboot.todo.service.AuthService;
@@ -25,9 +26,9 @@ public class AuthController {
 
     // Build Login REST API
     @PostMapping("/login")
-    public ResponseEntity<String> login(@RequestBody LoginDto loginDto) {
-        String response = authService.login(loginDto);
-        return new ResponseEntity<>(response, HttpStatus.OK);
+    public ResponseEntity<JwtAuthResponse> login(@RequestBody LoginDto loginDto) {
+        JwtAuthResponse jwtAuthResponse = authService.login(loginDto);
+        return new ResponseEntity<>(jwtAuthResponse, HttpStatus.OK);
     }
 
 }
