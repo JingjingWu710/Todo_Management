@@ -1,9 +1,3 @@
-# TodoManagement
+# Todo Management System (Spring Boot + React.js)
 
---15 Feb 2025--
-
-Got CORS issue. Solved it but got 401 error.
-
---17 Feb 2025--
-
-Solved. Working on JWT Web Tokens.
+There is an account system where administrators can publish, edit, and delete tasks, and users can update task status. JWT tokens are used to ensure account security.
